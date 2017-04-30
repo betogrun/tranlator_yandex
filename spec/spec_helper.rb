@@ -9,3 +9,4 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+TEST_API_KEY = ""
