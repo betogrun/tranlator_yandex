@@ -23,12 +23,12 @@ Or install it yourself as:
 First get your API key at  [Yandex](https://passport.yandex.com/registration?mode=register&from=tech&retpath=https%3A%2F%2Ftech.yandex.com%2Fkeys%2Fget%2F%3Fservice%3Dtrnsl&uid=497846848)
 
 Then use your key to initialize the Yandex class
-```
+```ruby
 yandex = TranslatorYandex::Yandex.new YOUR_API_KEY
 ```
 
 Now you are able to use the API methods like:
-```
+```ruby
 yandex.translate "Привет, мир!", "en" #"text"=>["Hello world!"]
 ```
 
