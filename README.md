@@ -1,8 +1,6 @@
 # TranslatorYandex
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/translator_yandex`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Gem created to handle text translation using Yandex API.
 
 ## Installation
 
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First get your API key at  [Yandex](https://passport.yandex.com/registration?mode=register&from=tech&retpath=https%3A%2F%2Ftech.yandex.com%2Fkeys%2Fget%2F%3Fservice%3Dtrnsl&uid=497846848)
+
+Then use your key to initialize the Yandex class
+```
+yandex = TranslatorYandex::Yandex.new YOUR_API_KEY
+```
+
+Now you are able to use the API methods like:
+```
+yandex.translate "Привет, мир!", "en" #"text"=>["Hello world!"]
+```
 
 ## Development
 
@@ -38,4 +46,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
